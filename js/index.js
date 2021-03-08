@@ -47,6 +47,8 @@ circle.setAttribute('src', siteContent["cta"]["img-src"]);
 let line = document.getElementById("middle-img");
 line.setAttribute('src', siteContent["main-content"]["middle-img-src"]);
 
+
+
 const navBar = document.querySelector('nav');
 let item1 = navBar.querySelector('a:nth-of-type(1)');
 item1.textContent= siteContent.nav["nav-item-1"];
@@ -60,6 +62,22 @@ let item5 = navBar.querySelector('a:nth-of-type(5)');
 item5.textContent= siteContent.nav["nav-item-5"];
 let item6 = navBar.querySelector('a:nth-of-type(6)');
 item6.textContent= siteContent.nav["nav-item-6"];
+
+let title = document.querySelector("h1");
+title.textContent = siteContent['cta']['h1'];
+
+let tButton = document.querySelector('button');
+tButton.textContent = "Get started"
+
+let points = document.querySelectorAll('features-h4');
+points.textContent = siteContent['main-content']['features-h4']
+// points[1].textContent = 'About';
+// points[2].textContent = 'Services';
+// points[3].textContent = 'Product';
+// points[4].textContent = 'Vision';
+// points[5].textContent = 'Contact';
+
+
 
 
 
