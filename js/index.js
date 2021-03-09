@@ -92,6 +92,24 @@ bottomContact.children[3].textContent = siteContent['contact']['email'];
 let footer = document.querySelector("footer p");
 footer.textContent = siteContent['footer']['copyright'];
 
+const inFront = document.createElement('a');
+inFront.textContent = 'Front';
+inFront.href = '#';
+inFront.style.color = 'green';
+document.querySelector('nav').prepend(inFront);
+
+const back = document.createElement('a');
+back.textContent = 'Back';
+back.href = '#';
+back.style.color = 'green';
+document.querySelector('nav').appendChild(back);
+
+item1.style.color = 'green';
+item2.style.color = 'green';
+item3.style.color = 'green';
+item4.style.color = 'green';
+item5.style.color = 'green';
+item6.style.color = 'green';
 
 
 
