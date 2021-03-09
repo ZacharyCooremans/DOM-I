@@ -69,13 +69,35 @@ title.textContent = siteContent['cta']['h1'];
 let tButton = document.querySelector('button');
 tButton.textContent = "Get started"
 
-let points = document.querySelectorAll('features-h4');
-points.textContent = siteContent['main-content']['features-h4']
-// points[1].textContent = 'About';
-// points[2].textContent = 'Services';
-// points[3].textContent = 'Product';
-// points[4].textContent = 'Vision';
-// points[5].textContent = 'Contact';
+const topContent = document.querySelector('.top-content')
+topContent.children[0].children[0].textContent = siteContent['main-content']['features-h4'];
+topContent.children[0].children[1].textContent = siteContent['main-content']['features-content'];
+topContent.children[1].children[0].textContent = siteContent['main-content']['about-h4'];
+topContent.children[1].children[1].textContent = siteContent['main-content']['about-content'];
+
+const bottomContent = document.querySelector('.bottom-content');
+bottomContent.children[0].children[0].textContent = siteContent['main-content']['services-h4'];
+bottomContent.children[0].children[1].textContent = siteContent['main-content']['services-content'];
+bottomContent.children[1].children[0].textContent = siteContent['main-content']['product-h4'];
+bottomContent.children[1].children[1].textContent = siteContent['main-content']['services-content'];
+bottomContent.children[2].children[0].textContent = siteContent['main-content']['vision-h4'];
+bottomContent.children[2].children[1].textContent = siteContent['main-content']['services-content']
+
+const bottomContact = document.querySelector(".contact");
+bottomContact.children[0].textContent = siteContent['contact']['contact-h4'];
+bottomContact.children[1].textContent = siteContent['contact']['address'];
+bottomContact.children[2].textContent = siteContent['contact']['phone'];
+bottomContact.children[3].textContent = siteContent['contact']['email'];
+
+let footer = document.querySelector("footer p");
+footer.textContent = siteContent['footer']['copyright'];
+
+
+
+
+
+
+
 
 
 
